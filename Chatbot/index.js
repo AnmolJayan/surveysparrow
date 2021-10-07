@@ -9,6 +9,11 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+function sendMessage(){
+  output(document.getElementById('input').value);
+  document.getElementById('input').value = '';
+}
+
 function output(input) {
   let product;
 
